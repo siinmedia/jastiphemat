@@ -160,7 +160,7 @@ const AdminDashboard: React.FC<AdminDashboardProps> = ({ onLogout }) => {
               </div>
               <button
                 onClick={fetchPesanan}
-                className="bg-gradient-to-r from-pink-400 to-pink-500 text-white px-4 py-2 rounded-lg font-medium hover:from-pink-500 hover:to-pink-600 transition-all duration-200 transform hover:scale-105 font-poppins"
+                className="bg-gradient-to-r from-pink-400 to-pink-500 text-white px-3 py-2 rounded-lg text-sm font-medium hover:from-pink-500 hover:to-pink-600 transition-all duration-200 transform hover:scale-105 font-poppins"
               >
                 Refresh
               </button>

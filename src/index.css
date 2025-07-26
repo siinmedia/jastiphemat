@@ -71,5 +71,62 @@ body {
 
 /* Input styles */
 .input-cute {
-  @apply w-full px-4 py-3 rounded-xl border-2 border-pink-200 focus:border-pink-400 focus:outline-none transition-all duration-200 bg-white/80 backdrop-blur-sm;
+  @apply w-full px-3 py-2.5 rounded-xl border-2 border-pink-200 focus:border-pink-400 focus:outline-none transition-all duration-200 bg-white/80 backdrop-blur-sm text-sm;
+}
+
+/* Print styles */
+@media print {
+  body {
+    background: white !important;
+  }
+  
+  .bg-gradient-to-r {
+    background: #ec4899 !important;
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+  }
+  
+  /* Better print colors */
+  .bg-gradient-to-r {
+    background: #ec4899 !important;
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+  }
+}
+
+/* Mobile responsive improvements */
+@media (max-width: 640px) {
+  .text-4xl {
+    font-size: 2rem !important;
+  }
+  
+  .text-6xl {
+    font-size: 2.5rem !important;
+  }
+  
+  .px-8 {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  
+  .py-4 {
+    padding-top: 0.75rem !important;
+    padding-bottom: 0.75rem !important;
+  }
+  
+  .gap-8 {
+    gap: 1rem !important;
+  }
+  
+  .mb-8 {
+    margin-bottom: 1.5rem !important;
+  }
+  
+  .p-8 {
+    padding: 1rem !important;
+  }
+  
+  .rounded-2xl {
+    border-radius: 1rem !important;
+  }
 }

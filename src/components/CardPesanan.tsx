@@ -66,7 +66,7 @@ const CardPesanan: React.FC<CardPesananProps> = ({ pesanan, onDetail }) => {
         </div>
         <button
           onClick={onDetail}
-          className="bg-gradient-to-r from-pink-400 to-pink-500 text-white px-4 py-2 rounded-lg text-sm font-medium hover:from-pink-500 hover:to-pink-600 transition-all duration-200 transform hover:scale-105"
+          className="bg-gradient-to-r from-pink-400 to-pink-500 text-white px-3 py-1.5 rounded-lg text-xs font-medium hover:from-pink-500 hover:to-pink-600 transition-all duration-200 transform hover:scale-105"
         >
           Lihat Detail
         </button>

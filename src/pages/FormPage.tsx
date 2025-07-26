@@ -172,7 +172,7 @@ const FormPage: React.FC = () => {
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full bg-gradient-to-r from-pink-400 to-pink-500 text-white py-4 rounded-xl font-semibold text-lg hover:from-pink-500 hover:to-pink-600 transition-all duration-200 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed shadow-lg hover:shadow-xl font-poppins"
+                className="w-full bg-gradient-to-r from-pink-400 to-pink-500 text-white py-3 rounded-xl font-medium text-base hover:from-pink-500 hover:to-pink-600 transition-all duration-200 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed shadow-lg hover:shadow-xl font-poppins"
               >
                 {loading ? 'Mengirim Pesanan...' : 'Kirim Pesanan 💖'}
               </button>

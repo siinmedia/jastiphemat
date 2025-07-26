@@ -7,6 +7,7 @@ interface FormInputProps {
   onChange: (value: string) => void
   placeholder?: string
   required?: boolean
+  disabled?: boolean
   rows?: number
   options?: { value: string; label: string }[]
 }
@@ -18,10 +19,11 @@ const FormInput: React.FC<FormInputProps> = ({
   onChange,
   placeholder,
   required = false,
+  disabled = false,
   rows,
   options
 }) => {
-  const baseClasses = "w-full px-4 py-3 rounded-xl border-2 border-pink-200 focus:border-pink-400 focus:outline-none transition-all duration-200 bg-white/80 backdrop-blur-sm font-poppins"
+  const baseClasses = `w-full px-3 py-2.5 rounded-xl border-2 border-pink-200 focus:border-pink-400 focus:outline-none transition-all duration-200 bg-white/80 backdrop-blur-sm font-poppins text-sm ${disabled ? 'opacity-60 cursor-not-allowed' : ''}`
 
   if (type === 'select' && options) {
     return (
@@ -33,6 +35,7 @@ const FormInput: React.FC<FormInputProps> = ({
           value={value}
           onChange={(e) => onChange(e.target.value)}
           className={baseClasses}
+          disabled={disabled}
           required={required}
         >
           <option value="">Pilih {label}</option>
@@ -56,6 +59,7 @@ const FormInput: React.FC<FormInputProps> = ({
           value={value}
           onChange={(e) => onChange(e.target.value)}
           placeholder={placeholder}
+          disabled={disabled}
           rows={rows || 4}
           className={baseClasses}
           required={required}
@@ -74,6 +78,7 @@ const FormInput: React.FC<FormInputProps> = ({
         value={value}
         onChange={(e) => onChange(e.target.value)}
         placeholder={placeholder}
+        disabled={disabled}
         className={baseClasses}
         required={required}
       />

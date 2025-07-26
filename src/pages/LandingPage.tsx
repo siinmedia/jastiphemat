@@ -47,10 +47,10 @@ const LandingPage: React.FC = () => {
 
           <button
             onClick={() => navigate('/form')}
-            className="bg-gradient-to-r from-pink-400 to-pink-500 text-white px-8 py-4 rounded-2xl font-semibold text-lg hover:from-pink-500 hover:to-pink-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl font-poppins inline-flex items-center gap-2"
+            className="bg-gradient-to-r from-pink-400 to-pink-500 text-white px-6 py-3 rounded-xl font-medium text-base hover:from-pink-500 hover:to-pink-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl font-poppins inline-flex items-center gap-2"
           >
             Titip Sekarang
-            <ArrowRight size={20} />
+            <ArrowRight size={18} />
           </button>
         </div>
       </section>
@@ -98,10 +98,10 @@ const LandingPage: React.FC = () => {
           </p>
           <button
             onClick={() => navigate('/form')}
-            className="bg-gradient-to-r from-pink-400 to-pink-500 text-white px-8 py-4 rounded-2xl font-semibold text-lg hover:from-pink-500 hover:to-pink-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl font-poppins inline-flex items-center gap-2"
+            className="bg-gradient-to-r from-pink-400 to-pink-500 text-white px-6 py-3 rounded-xl font-medium text-base hover:from-pink-500 hover:to-pink-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl font-poppins inline-flex items-center gap-2"
           >
             Mulai Sekarang
-            <Heart size={20} />
+            <Heart size={18} />
           </button>
         </div>
       </section>

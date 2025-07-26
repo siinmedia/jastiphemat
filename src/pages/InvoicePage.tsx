@@ -112,16 +112,16 @@ const InvoicePage: React.FC = () => {
         <div className="flex justify-end gap-3 mb-6 print:hidden">
           <button
             onClick={handleShare}
-            className="flex items-center gap-2 bg-blue-500 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-600 transition-colors font-poppins"
+            className="flex items-center gap-1.5 bg-blue-500 text-white px-3 py-2 rounded-lg text-sm font-medium hover:bg-blue-600 transition-colors font-poppins"
           >
-            <Share2 size={16} />
+            <Share2 size={14} />
             Share
           </button>
           <button
             onClick={handlePrint}
-            className="flex items-center gap-2 bg-gray-500 text-white px-4 py-2 rounded-lg font-medium hover:bg-gray-600 transition-colors font-poppins"
+            className="flex items-center gap-1.5 bg-gray-500 text-white px-3 py-2 rounded-lg text-sm font-medium hover:bg-gray-600 transition-colors font-poppins"
           >
-            <Download size={16} />
+            <Download size={14} />
             Print/Save
           </button>
         </div>
